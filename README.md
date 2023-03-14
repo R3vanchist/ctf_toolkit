@@ -6,3 +6,4 @@
 - Ghidra (Debugging program) (https://ghidra-sre.org/)
 - Volatilty3 (inspect ram) (git clone https://github.com/volatilityfoundation/volatility3.git)
 - steghide (extract hidden attachments in photos) (sudo apt install steghide)
+- gdb (program debugger) (sudo apt-get install gdb)
