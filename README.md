@@ -8,3 +8,4 @@
 - steghide (extract hidden attachments in photos) (sudo apt install steghide)
 - gdb (program debugger) (sudo apt-get install gdb)
 - pwntools (ctf toolkit) (pip install pwntools)
+- hexedit (website to modify files) (https://hexed.it/?hl=en)
