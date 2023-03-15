@@ -1,5 +1,9 @@
 # CTF Toolkit
 
+## How-To
+- run ctf_tool.py -f <absolute path of pcap>
+- answer the question on what you are looking for (udp, http, user agent, icmp, dns)
+
 ## Tools to Download
 - Kali (OS) (https://www.kali.org/)
 - Parrot (OS) (https://www.parrotsec.org/download/)
