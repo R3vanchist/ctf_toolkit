@@ -4,6 +4,7 @@ from udpExfil import udp_exfil
 from icmpExfil import icmp_exfil
 from userAgent import extract_user_agents
 from httpExfil import print_http_packets
+from dnsExfil import dns_exfil
 
 
 # Passing pcap as argument from command line
@@ -14,7 +15,7 @@ args = parser.parse_args()
 # Read the pcap
 packets = rdpcap(args.file)
 
-protocol = input("What are we looking for today?\nI accept: UDP, ICMP, HTTP, and User Agent: ").upper()
+protocol = input("What are we looking for today?\nI accept: UDP, ICMP, HTTP, DNS, and User Agent: ").upper()
 
 if protocol == "UDP":
     udp_exfil(packets)
@@ -24,3 +25,7 @@ elif protocol == "User Agent":
     extract_user_agents(packets)
 elif protocol == "HTTP":
     print_http_packets(packets)
+elif protocol == "DNS":
+    srcIP = input('Please enter the source ip: ')
+    dstIP = input('Please enter the destination ip: ')
+    dns_exfil(packets, srcIP, dstIP)
