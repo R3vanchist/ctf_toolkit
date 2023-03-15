@@ -3,13 +3,13 @@ from scapy.layers.http import HTTPRequest, HTTPResponse
 import argparse
 
 
-# Open the pcap file
+""" # Open the pcap file
 parser = argparse.ArgumentParser(description="Displays user agents")
 parser.add_argument("-f", "--file", required=True, help="PCAP file to analyze")
 args = parser.parse_args()
 
 
-packets = rdpcap(args.file)
+packets = rdpcap(args.file) """
 
 # Define a function to print the contents of HTTP packets
 def print_http_packets(packets):
@@ -21,5 +21,4 @@ def print_http_packets(packets):
                 print(packet[Raw].load.decode())
         except IndexError:
             continue
-# Call the function
-print_http_packets(packets)
+
