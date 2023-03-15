@@ -10,13 +10,12 @@ packets = rdpcap(args.file)
 # Variable to hold the UDP data
 contents = []
 # Go through the pcap and pull all the raw data and append it to contents
-for packet in packets:
-    if packet.haslayer(UDP):
-        if not packet.haslayer(Raw):
-            continue
-        else:
-            content = (packet[Raw].load.decode())
-            contents.append(content)
+for packet in packets[UDP]:
+    try:
+        if packet.haslayer(Raw):
+            contents.append(packet[Raw].load)
+    except IndexError:
+        continue
 # Print out contents
 print(contents)
             
