@@ -1,7 +1,7 @@
 # CTF Toolkit
 
 ## How-To
-- run ctf_tool.py -f <absolute path of pcap>
+- run ctf_tool.py -f /absolute/path.pcap
 - answer the question on what you are looking for (udp, http, user agent, icmp, dns)
 
 ## Tools to Download
