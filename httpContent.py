@@ -14,10 +14,12 @@ packets = rdpcap(args.file)
 # Define a function to print the contents of HTTP packets
 def print_http_packets(packets):
     for packet in packets:
-        if HTTPRequest in packet and packet.haslayer(Raw):
-            print(packet[Raw].load.decode())
-        if HTTPResponse in packet and packet.haslayer(Raw):
-            print(packet[Raw].load.decode())
-
+        try:
+            if HTTPRequest in packet and packet.haslayer(Raw):
+                print(packet[Raw].load.decode())
+            if HTTPResponse in packet and packet.haslayer(Raw):
+                print(packet[Raw].load.decode())
+        except IndexError:
+            continue
 # Call the function
 print_http_packets(packets)
