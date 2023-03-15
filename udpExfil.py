@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(description="UDP content dump.")
 parser.add_argument("-f", "--file", required=True, help="PCAP file to analyze")
 args = parser.parse_args()
 # Read the pcap
-packets = rdpcap(args.pcap)
+packets = rdpcap(args.file)
 # Variable to hold the UDP data
 contents = []
 # Go through the pcap and pull all the raw data and append it to contents
