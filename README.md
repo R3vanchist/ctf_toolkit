@@ -17,7 +17,7 @@
 
 ## Volatility Cheat Sheet
 
-### How to detect malicious files ?
+### How to detect malicious files ? 
 ./vol.exe -f Triage-Memory.mem — profile=Win7SP1x64 -D <Output_Location> -p <PID >malfind
 
 ### What type of dump am I going to analyze ?
