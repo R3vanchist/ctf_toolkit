@@ -4,7 +4,7 @@
 - run ctf_tool.py -f /absolute/path.pcap
 - answer the question on what you are looking for (udp, http, user agent, icmp, dns)
 
-## Tools to Download
+## Tools to Use
 - Kali (OS) (https://www.kali.org/)
 - Parrot (OS) (https://www.parrotsec.org/download/)
 - Ghidra (Debugging program) (https://ghidra-sre.org/)
@@ -13,3 +13,4 @@
 - gdb (program debugger) (sudo apt-get install gdb)
 - pwntools (ctf toolkit) (pip install pwntools)
 - hexedit (website to modify files) (https://hexed.it/?hl=en)
+- OSINT Framework (OSINT tool) (https://osintframework.com/)
