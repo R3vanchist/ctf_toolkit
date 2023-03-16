@@ -17,4 +17,4 @@
 - OSINT Framework (OSINT tool) (https://osintframework.com/)
 - enum4linux cheatsheet (https://highon.coffee/blog/enum4linux-cheat-sheet/)
 - smbclient cheatsheet (https://github.com/irgoncalves/smbclient_cheatsheet)
-
+- evil-winrm (windows remote command-line) (https://github.com/Hackplayers/evil-winrm)
