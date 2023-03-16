@@ -15,4 +15,6 @@
 - pwntools (ctf toolkit) (pip install pwntools)
 - hexedit (website to modify files) (https://hexed.it/?hl=en)
 - OSINT Framework (OSINT tool) (https://osintframework.com/)
+- enum4linux cheatsheet (https://highon.coffee/blog/enum4linux-cheat-sheet/)
+- smbclient cheatsheet (https://github.com/irgoncalves/smbclient_cheatsheet)
 
